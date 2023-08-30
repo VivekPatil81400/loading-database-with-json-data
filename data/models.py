@@ -3,8 +3,8 @@ from django.core.validators import MaxLengthValidator
 
 # Create your models here.
 class Company(models.Model):
-    name = models.CharField(max_length=20)
-    sector = models.CharField(max_length=10)
+    name = models.CharField(max_length=50)
+    sector = models.CharField(max_length=50)
     siren = models.IntegerField()
     ca = models.IntegerField()
     margin = models.IntegerField()
